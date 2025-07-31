@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAAM | رجل المنشار - التصنيفات</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* نفس تنسيق شريط التنقل من index.html */
+        
+        .selection-container {
+            background-color: #121212;
+            padding: 40px;
+            min-height: calc(100vh - 80px);
+        }
+        .selection-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .selection-header h1 {
+            color: #ff4757;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .option-card {
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            border: 2px solid #333;
+        }
+        .option-card:hover {
+            border-color: #ff4757;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255,71,87,0.3);
+        }
+        .option-card i {
+            font-size: 3rem;
+            color: #ff4757;
+            margin-bottom: 15px;
+        }
+        .option-card h2 {
+            color: #fff;
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+        .option-card p {
+            color: #a4b0be;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- نفس شريط التنقل من index.html -->
+
+    <div class="selection-container">
+        <div class="selection-header">
+            <h1><i class="fas fa-folder-open"></i> تصفح محتوى رجل المنشار</h1>
+            <p>اختر التصنيف الذي تريد استكشافه</p>
+        </div>
+        
+        <div class="options">
+            <div class="option-card" onclick="window.location.href='characters.html'">
+                <i class="fas fa-users"></i>
+                <h2>الشخصيات البشرية</h2>
+                <p>استكشف جميع شخصيات المانجا البشرية</p>
+                <span class="badge">12 شخصية</span>
+            </div>
+            
+            <div class="option-card" onclick="window.location.href='devils.html'">
+                <i class="fas fa-fire"></i>
+                <h2>الشياطين</h2>
+                <p>اكتشف قوة وأنواع الشياطين</p>
+                <span class="badge">8 شياطين</span>
+            </div>
+            
+            <div class="option-card" onclick="window.location.href='arcs.html'">
+                <i class="fas fa-book-open"></i>
+                <h2>أجزاء القصة</h2>
+                <p>تابع تطور أحداث المانجا</p>
+                <span class="badge">5 أجزاء</span>
+            </div>
+            
+            <div class="option-card" onclick="window.location.href='gallery.html'">
+                <i class="fas fa-images"></i>
+                <h2>معرض الصور</h2>
+                <p>أفضل اللحظات المصورة</p>
+                <span class="badge">50+ صورة</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

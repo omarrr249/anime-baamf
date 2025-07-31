@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAAM | شخصيات رجل المنشار</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .characters-container {
+            background-color: #121212;
+            padding: 40px;
+            min-height: calc(100vh - 80px);
+        }
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .page-header h1 {
+            color: #ff4757;
+            font-size: 2.5rem;
+        }
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .character-card {
+            background: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: all 0.3s;
+        }
+        .character-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255,71,87,0.2);
+            border-color: #ff4757;
+        }
+        .character-image {
+            height: 350px;
+            overflow: hidden;
+        }
+        .character-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .character-card:hover .character-image img {
+            transform: scale(1.1);
+        }
+        .character-info {
+            padding: 20px;
+        }
+        .character-info h2 {
+            color: #ff4757;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        .character-info p {
+            color: #a4b0be;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .character-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .meta-tag {
+            background: #ff4757;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    
+    <div class="characters-container">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-users"></i> شخصيات رجل المنشار</h1>
+                <div class="back-btn" onclick="window.location.href='selection.html'">
+                    <i class="fas fa-arrow-right"></i> العودة
+                </div>
+            </div>
+            
+            <div class="characters-grid">
+                <!-- دنجي -->
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/denji.jpg" alt="دنجي">
+                    </div>
+                    <div class="character-info">
+                        <h2>دنجي <span class="jp-name">(デンジ)</span></h2>
+                        <p>بطل القصة الرئيسي، شاب فقير يندمج مع شيطان المنشار ليصبح صياد شياطين.</p>
+                        <div class="character-meta">
+                            <span class="meta-tag">بطل رئيسي</span>
+                            <span class="meta-tag">صياد شياطين</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ماكيما -->
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/makima.jpg" alt="ماكيما">
+                    </div>
+                    <div class="character-info">
+                        <h2>ماكيما <span class="jp-name">(マキマ)</span></h2>
+                        <p>قائدة منظمة صيادي الشياطين، شخصية غامضة ذات قدرات خارقة.</p>
+                        <div class="character-meta">
+                            <span class="meta-tag">قائدة</span>
+                            <span class="meta-tag">غامضة</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- باور -->
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/power.jpg" alt="باور">
+                    </div>
+                    <div class="character-info">
+                        <h2>باور <span class="jp-name">(パワー)</span></h2>
+                        <p>شيطان الدم التي تتصرف بأنانية ولكنها تصبح صديقة مقربة لدنجي.</p>
+                        <div class="character-meta">
+                            <span class="meta-tag">شيطان الدم</span>
+                            <span class="meta-tag">صديقة دنجي</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- أكي -->
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/aki.jpg" alt="أكي">
+                    </div>
+                    <div class="character-info">
+                        <h2>أكي هايازاوا <span class="jp-name">(早川アキ)</span></h2>
+                        <p>صياد شياطين جاد ومسؤول، يصبح شريك دنجي وباور.</p>
+                        <div class="character-meta">
+                            <span class="meta-tag">صياد شياطين</span>
+                            <span class="meta-tag">جاد</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- أضف المزيد من الشخصيات هنا -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

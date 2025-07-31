@@ -1,0 +1,88 @@
+.page-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 30px 0;
+    text-align: center;
+}
+
+.devils-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.devil-card {
+    background: var(--dark-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.devil-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 71, 87, 0.2);
+    border-color: var(--primary-color);
+}
+
+.devil-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.devil-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.devil-card:hover .devil-image img {
+    transform: scale(1.1);
+}
+
+.devil-info {
+    padding: 20px;
+}
+
+.devil-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.devil-jp {
+    font-size: 0.8em;
+    color: var(--gray-color);
+    font-weight: normal;
+}
+
+.devil-details {
+    margin-bottom: 15px;
+}
+
+.devil-details p {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.devil-details i {
+    width: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.devil-description {
+    color: var(--gray-color);
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .devils-grid {
+        grid-template-columns: 1fr;
+    }
+}

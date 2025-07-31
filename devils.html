@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAAM | شياطين رجل المنشار</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .devils-container {
+            background-color: #000000;
+            padding: 40px;
+            min-height: calc(100vh - 80px);
+        }
+        .devils-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .devils-header h1 {
+            color: #d20202;
+            font-size: 2.5rem;
+        }
+        .devils-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .devil-card {
+            background: #830505f7;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #000000;
+            transition: all 0.3s;
+        }
+        .devil-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+        }
+        .devil-image {
+            height: 350px;
+            overflow: hidden;
+        }
+        .devil-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .devil-info {
+            padding: 20px;
+        }
+        .devil-info h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        .devil-info p {
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .danger-level {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .danger-level span {
+            margin-right: 10px;
+        }
+        .danger-meter {
+            flex-grow: 1;
+            height: 5px;
+            background: #000000;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .danger-fill {
+            height: 100%;
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    
+    <div class="devils-container">
+        <div class="container">
+            <div class="devils-header">
+                <h1><i class="fas fa-fire"></i> شياطين رجل المنشار</h1>
+                <div class="back-btn" onclick="window.location.href='selection.html'">
+                    <i class="fas fa-arrow-right"></i> العودة
+                </div>
+            </div>
+            
+            <div class="devils-grid">
+                <!-- شيطان المنشار -->
+                <div class="devil-card">
+                    <div class="devil-image">
+                        <img src="images/chainsaw-devil.jpg" alt="شيطان المنشار">
+                    </div>
+                    <div class="devil-info">
+                        <h2>شيطان المنشار <span class="jp-name">(チェンソーの悪魔)</span></h2>
+                        <p>أحد أخطر الشياطين، يمتلك قوة تحويل أي جزء من جسده إلى منشار.</p>
+                        <div class="danger-level">
+                            <span>مستوى الخطورة:</span>
+                            <div class="danger-meter">
+                                <div class="danger-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- شيطان المسدس -->
+                <div class="devil-card">
+                    <div class="devil-image">
+                        <img src="images/gun-devil.jpg" alt="شيطان المسدس">
+                    </div>
+                    <div class="devil-info">
+                        <h2>شيطان المسدس <span class="jp-name">(銃の悪魔)</span></h2>
+                        <p>أحد أقوى الشياطين في العالم، تسبب في مقتل الملايين حول العالم.</p>
+                        <div class="danger-level">
+                            <span>مستوى الخطورة:</span>
+                            <div class="danger-meter">
+                                <div class="danger-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- شيطان الدم -->
+                <div class="devil-card">
+                    <div class="devil-image">
+                        <img src="images/blood-devil.jpg" alt="شيطان الدم">
+                    </div>
+                    <div class="devil-info">
+                        <h2>شيطان الدم <span class="jp-name">(血の悪魔)</span></h2>
+                        <p>يتخذ شكل فتاة بشرية تدعى باور، يمكنها التحكم بالدم وتشكيل أسلحة منه.</p>
+                        <div class="danger-level">
+                            <span>مستوى الخطورة:</span>
+                            <div class="danger-meter">
+                                <div class="danger-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- شيطان المستقبل -->
+                <div class="devil-card">
+                    <div class="devil-image">
+                        <img src="images/future-devil.jpg" alt="شيطان المستقبل">
+                    </div>
+                    <div class="devil-info">
+                        <h2>شيطان المستقبل <span class="jp-name">(未来の悪魔)</span></h2>
+                        <p>يمتلك قدرة رؤية المستقبل، يعطي قواه لأكي في صورة عين في راحة اليد.</p>
+                        <div class="danger-level">
+                            <span>مستوى الخطورة:</span>
+                            <div class="danger-meter">
+                                <div class="danger-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- أضف المزيد من الشياطين هنا -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
